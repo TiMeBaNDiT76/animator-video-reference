@@ -375,11 +375,11 @@ class Animationimporter(Extension):
 
 
 		# make sure we have everything set up to be able to use this
-		self.checkFFMPegExists()
-		self.checkFFProbeExists()
-		self.checkKritaVersion()		
-		if self.ffmpegFound == 0 or self.ffprobeFound == 0 or self.kritaVersionOk == 0  :
-			self.disableUIAndShowMissingDependencyList()
+		# self.checkFFMPegExists()
+		# self.checkFFProbeExists()
+		# self.checkKritaVersion()		
+		# if self.ffmpegFound == 0 or self.ffprobeFound == 0 or self.kritaVersionOk == 0  :
+		# 	self.disableUIAndShowMissingDependencyList()
 
 
 		self.dialog.show()
