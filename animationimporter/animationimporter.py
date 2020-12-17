@@ -422,7 +422,7 @@ class Animationimporter(Extension):
 
 
 	def checkFFMPegExists(self):
-		self.findffmpegCommand = ['ffmpeg']		
+		self.findffmpegCommand = ['ffmpeg';'-version']		
 		self.ffmpegFound = 0
 		try:
 			self.ffmpegFound = subprocess.call(self.findffmpegCommand)
@@ -431,7 +431,7 @@ class Animationimporter(Extension):
 
 
 	def checkFFProbeExists(self):
-		self.findffprobeCommand = ['ffprobe']		
+		self.findffprobeCommand = ['ffprobe','-version']		
 		self.ffprobeFound = 0
 		try:
 			self.ffprobeFound = subprocess.call(self.findffprobeCommand)
