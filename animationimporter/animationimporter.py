@@ -422,7 +422,7 @@ class Animationimporter(Extension):
 
 
 	def checkFFMPegExists(self):
-		self.findffmpegCommand = ['ffmpeg';'-version']		
+		self.findffmpegCommand = ['ffmpeg','-version']		
 		self.ffmpegFound = 0
 		try:
 			self.ffmpegFound = subprocess.call(self.findffmpegCommand)
